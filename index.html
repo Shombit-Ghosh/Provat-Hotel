@@ -1,0 +1,2210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Provat Hotel & Restaurant | Hotel & Bengali Restaurant in Jalpaiguri</title>
+  <meta name="description" content="Provat Hotel & Restaurant on DBC Road, Jalpaiguri offers comfortable AC and Non-AC rooms along with Bengali food, fish, chicken, mutton, egg, vegetarian dishes and Chinese snacks.">
+  <meta name="keywords" content="Hotel in Jalpaiguri, Hotel on DBC Road, Restaurant in Jalpaiguri, Bengali food in Jalpaiguri, AC rooms in Jalpaiguri, Budget hotel in Jalpaiguri">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Protocol for Social Sharing -->
+  <meta property="og:title" content="Provat Hotel & Restaurant | Hotel & Bengali Restaurant in Jalpaiguri">
+  <meta property="og:description" content="Comfortable AC & Non-AC lodging and authentic Bengali cuisine on DBC Road, Jalpaiguri.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS RESET & VARIABLES
+       ========================================================================== */
+    :root {
+      --primary: #8B1E1E;         /* Deep Bengali Terracotta Maroon */
+      --primary-dark: #631414;
+      --primary-light: #B43838;
+      --accent: #D97706;          /* Warm Mustard / Golden Turmeric */
+      --accent-light: #F59E0B;
+      --bg-cream: #FAF7F2;        /* Warm Cream Background */
+      --bg-surface: #FFFFFF;
+      --text-dark: #1F2421;
+      --text-muted: #665C54;
+      --border-color: #E8DFD5;
+      --shadow-sm: 0 2px 6px rgba(139, 30, 30, 0.05);
+      --shadow-md: 0 6px 18px rgba(139, 30, 30, 0.08);
+      --shadow-lg: 0 12px 32px rgba(139, 30, 30, 0.12);
+      --radius: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .brand-font {
+      font-family: 'Cinzel', Georgia, serif;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-subtitle {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      box-shadow: 0 4px 12px rgba(99, 20, 20, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background-color: #fff;
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-accent {
+      background-color: var(--accent);
+      color: #fff;
+    }
+
+    .btn-accent:hover {
+      background-color: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+
+    .brand-logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-logo .title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.15;
+    }
+
+    .brand-logo .location-tag {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+    }
+
+    .nav-link {
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: 0.95rem;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--primary);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--primary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* Mobile Drawer */
+    @media (max-width: 991px) {
+      .hamburger {
+        display: flex;
+      }
+      .nav-menu {
+        position: fixed;
+        top: 76px;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: calc(100vh - 76px);
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.35s ease;
+      }
+      .nav-menu.active {
+        right: 0;
+      }
+      .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(45, 12, 12, 0.78), rgba(20, 5, 5, 0.85)), 
+                  url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1.25rem;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .hero-location-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(217, 119, 6, 0.25);
+      border: 1px solid var(--accent);
+      color: #FBBF24;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #FDE68A;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-text {
+      font-size: 1.05rem;
+      color: #E2E8F0;
+      margin-bottom: 2rem;
+      max-width: 650px;
+      margin-inline: auto;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .hero-highlights {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 2rem;
+    }
+
+    .highlight-pill {
+      font-size: 0.85rem;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       ABOUT SECTION
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-image-container {
+      position: relative;
+    }
+
+    .about-image {
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      object-fit: cover;
+      width: 100%;
+      height: 420px;
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: -20px;
+      right: 20px;
+      background: var(--primary);
+      color: #fff;
+      padding: 1.2rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      max-width: 220px;
+    }
+
+    .about-badge p {
+      font-size: 0.88rem;
+      font-style: italic;
+      line-height: 1.35;
+    }
+
+    .about-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-quote {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary);
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-features-list {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .about-features-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .about-features-list li span {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .about-badge {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: -30px;
+        margin-inline: auto;
+      }
+    }
+
+    /* ==========================================================================
+       ROOMS SECTION
+       ========================================================================== */
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .room-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .room-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .room-img-wrap {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+    }
+
+    .room-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .room-card:hover .room-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .room-tag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(139, 30, 30, 0.9);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .room-info {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .room-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .room-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .room-facilities {
+      margin-bottom: 1.5rem;
+    }
+
+    .room-facilities h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .room-facilities ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .room-facilities li {
+      background: var(--bg-cream);
+      padding: 0.3rem 0.65rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: var(--text-dark);
+      border: 1px solid var(--border-color);
+    }
+
+    .room-pricing-block {
+      margin-top: auto;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .price-notice {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.95rem;
+    }
+
+    .bath-options-box {
+      background: #FFF9F2;
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .bath-options-box h4 {
+      color: var(--primary-dark);
+      font-size: 1.05rem;
+    }
+
+    .bath-options-box p {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+    }
+
+    /* ==========================================================================
+       FOOD & RESTAURANT SECTION & FILTER
+       ========================================================================== */
+    .menu-filter-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .filter-btn {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      color: var(--text-dark);
+      padding: 0.55rem 1.25rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .food-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .food-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .food-card-img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .food-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .food-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .food-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+      color: var(--text-dark);
+    }
+
+    .food-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .food-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px dashed var(--border-color);
+      padding-top: 0.75rem;
+    }
+
+    .food-price {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+
+    .menu-notice-box {
+      text-align: center;
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: #FFFDF9;
+      border: 1px dashed var(--accent);
+      border-radius: var(--radius);
+    }
+
+    .menu-notice-box p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ==========================================================================
+       FACILITIES SECTION
+       ========================================================================== */
+    .facilities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .facility-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      padding: 1.75rem 1.25rem;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .facility-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .facility-icon {
+      width: 52px;
+      height: 52px;
+      background: #FFF1E8;
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .facility-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .facility-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       WHY CHOOSE US
+       ========================================================================== */
+    .why-us-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .why-card {
+      background: #fff;
+      padding: 1.75rem 1.5rem;
+      border-radius: var(--radius);
+      border-top: 4px solid var(--primary);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .why-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .why-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .why-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       GALLERY & LIGHTBOX
+       ========================================================================== */
+    .gallery-filter-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      height: 220px;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(139, 30, 30, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: var(--transition);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      padding: 1rem;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .lightbox-img {
+      max-height: 80vh;
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 4px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-caption {
+      color: #fff;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: #fff;
+      font-size: 2.2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border: none;
+      padding: 1rem 0.8rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .lightbox-nav:hover {
+      background: rgba(255,255,255,0.4);
+    }
+
+    .lightbox-prev { left: 10px; }
+    .lightbox-next { right: 10px; }
+
+    /* ==========================================================================
+       TESTIMONIALS (EDITABLE / PLACEHOLDER)
+       ========================================================================== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .testimonial-card {
+      background: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .demo-pill {
+      align-self: flex-start;
+      font-size: 0.72rem;
+      background: #FEE2E2;
+      color: var(--primary);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--text-dark);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 0.95rem;
+    }
+
+    .reviewer-tag {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       ENQUIRY & BOOKING FORMS
+       ========================================================================== */
+    .form-wrapper {
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .form-control {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      background-color: var(--bg-cream);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      background-color: #fff;
+    }
+
+    /* ==========================================================================
+       LOCATION & CONTACT SECTION
+       ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item-icon {
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+
+    .map-container {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      height: 100%;
+      min-height: 380px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 0;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-wrapper {
+        padding: 1.5rem;
+      }
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background-color: #260B0B;
+      color: #E2E8F0;
+      padding: 4.5rem 0 2rem;
+      border-top: 4px solid var(--accent);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 2.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-brand h3 {
+      color: #fff;
+      font-size: 1.35rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-tagline {
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .footer-links h4 {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .footer-links h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .footer-links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-links a {
+      color: #CBD5E1;
+      font-size: 0.92rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #94A3B8;
+    }
+
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==========================================================================
+       FLOATING ACTION & BACK TO TOP
+       ========================================================================== */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+      font-size: 2rem;
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 95px;
+      right: 30px;
+      background-color: var(--primary);
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background-color: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="brand-logo">
+        <span class="title">PROVAT</span>
+        <span class="location-tag">HOTEL & RESTAURANT • JALPAIGURI</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#rooms" class="nav-link">Rooms</a>
+        <a href="#menu" class="nav-link">Food Menu</a>
+        <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#enquiry" class="btn btn-primary btn-sm">Book / Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-location-badge">📍 Located on DBC Road, Jalpaiguri</div>
+      <h1>Welcome to Provat Hotel & Restaurant</h1>
+      <p class="hero-subtitle">Comfortable Stay • Authentic Bengali Food • Chinese Snacks</p>
+      <p class="hero-text">Your comfortable stay and delicious food destination in the heart of Jalpaiguri. Experience genuine local hospitality with freshly cooked meals and restful lodging.</p>
+      <div class="hero-cta">
+        <a href="#rooms" class="btn btn-primary">Explore Rooms</a>
+        <a href="#menu" class="btn btn-secondary">View Food Menu</a>
+      </div>
+      <div class="hero-highlights">
+        <span class="highlight-pill">✓ AC & Non-AC Rooms</span>
+        <span class="highlight-pill">✓ Authentic Bengali Cuisine</span>
+        <span class="highlight-pill">✓ Chinese Snacks</span>
+        <span class="highlight-pill">✓ Comfortable Stay</span>
+        <span class="highlight-pill">✓ Family Friendly</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-container">
+          <!-- REPLACE WITH ACTUAL PHOTO OF THE HOTEL OR RESTAURANT -->
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Provat Hotel & Restaurant Ambience" class="about-image">
+          <div class="about-badge">
+            <p>“A comfortable stay paired with the taste of authentic Bengali food.”</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">Local Hospitality</span>
+          <h2>About Provat Hotel & Restaurant</h2>
+          <p class="about-quote">Your dependable accommodation and dining address on DBC Road, Jalpaiguri.</p>
+          <p class="section-desc" style="margin-bottom: 1rem;">
+            Provat Hotel & Restaurant is a dedicated local hospitality destination in Jalpaiguri, designed to cater to daily travelers, visiting officials, families, and food lovers. We bring together essential lodging conveniences and wholesome local dining right in the town's prime commercial zone.
+          </p>
+          <p class="section-desc">
+            Whether you are stopping by for an authentic Bengali lunch thali, grabbing tasty evening Chinese snacks, or requiring an economical and restful room for the night, we strive to make your visit easy and enjoyable.
+          </p>
+          <ul class="about-features-list">
+            <li><span>✓</span> AC and Non-AC Rooms</li>
+            <li><span>✓</span> Attached & Common Bathrooms</li>
+            <li><span>✓</span> Fresh Bengali Staple Meals</li>
+            <li><span>✓</span> Fish, Chicken, Mutton & Egg</li>
+            <li><span>✓</span> Wholesome Vegetarian Dishes</li>
+            <li><span>✓</span> Convenient DBC Road Location</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ROOMS SECTION
+       ========================================================================== -->
+  <section id="rooms" class="section" style="background-color: #F5EFEB;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Accommodation</span>
+        <h2 class="section-title">Our Rooms</h2>
+        <p class="section-desc">Clean, practical, and comfortable rooms tailored for short visits, transit travelers, and family stays in Jalpaiguri.</p>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Room 1: AC Room -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <span class="room-tag">Air Conditioned</span>
+            <!-- REPLACE WITH ACTUAL AC ROOM IMAGE -->
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=700&q=80" alt="Provat Hotel AC Room">
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">AC Room</h3>
+            <p class="room-desc">Comfortable air-conditioned accommodation suitable for travelers, families, and guests looking for a cooler, more relaxing stay after a long journey.</p>
+            <div class="room-facilities">
+              <h4>Room Features</h4>
+              <ul>
+                <li>Air Conditioning</li>
+                <li>Comfortable Bed</li>
+                <li>Clean Room</li>
+                <li>Bathroom Option</li>
+                <li>Short & Long Stays</li>
+              </ul>
+            </div>
+            <div class="room-pricing-block">
+              <!-- PLACEHOLDER FOR PRICING -->
+              <p class="price-notice">Price: Contact Us for Current Rates</p>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="enquireRoom('AC Room')">Enquire on WhatsApp</button>
+          </div>
+        </div>
+
+        <!-- Room 2: Non-AC Room -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <span class="room-tag">Economical</span>
+            <!-- REPLACE WITH ACTUAL NON-AC ROOM IMAGE -->
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=700&q=80" alt="Provat Hotel Non-AC Room">
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Non-AC Room</h3>
+            <p class="room-desc">A budget-friendly and well-kept accommodation option created for guests seeking a simple, comfortable, and economical stay in Jalpaiguri.</p>
+            <div class="room-facilities">
+              <h4>Room Features</h4>
+              <ul>
+                <li>Comfortable Bed</li>
+                <li>Clean Room</li>
+                <li>Bathroom Option</li>
+                <li>Budget Friendly</li>
+                <li>Suitable for Travelers</li>
+              </ul>
+            </div>
+            <div class="room-pricing-block">
+              <!-- PLACEHOLDER FOR PRICING -->
+              <p class="price-notice">Price: Contact Us for Current Rates</p>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="enquireRoom('Non-AC Room')">Enquire on WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bathroom Options Box -->
+      <div class="bath-options-box">
+        <h4>Bathroom Configurations</h4>
+        <p>Rooms at Provat Hotel are available with both <strong>Attached Bathroom</strong> and <strong>Common Bathroom</strong> setups to suit individual comfort levels and budgets. Please specify your preference during enquiry so we can arrange suitable availability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOD & RESTAURANT SECTION
+       ========================================================================== -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Local Flavours</span>
+        <h2 class="section-title">Taste the Flavours of Bengal</h2>
+        <p class="section-desc">Our restaurant serves a variety of Bengali staples prepared for everyday meals, family dining, and travelers looking for authentic local flavours, alongside popular Chinese snacks.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-filter-container">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="bengali">Bengali Staples</button>
+        <button class="filter-btn" data-filter="fish">Fish Dishes</button>
+        <button class="filter-btn" data-filter="chicken">Chicken</button>
+        <button class="filter-btn" data-filter="mutton">Mutton</button>
+        <button class="filter-btn" data-filter="egg">Egg</button>
+        <button class="filter-btn" data-filter="veg">Vegetarian</button>
+        <button class="filter-btn" data-filter="chinese">Chinese Snacks</button>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Fish Item -->
+        <div class="food-card" data-category="bengali fish">
+          <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=500&q=80" alt="Bengali Fish Curry" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Fish / Bengali</span>
+            <h4 class="food-title">Bengali Style Fish Curry</h4>
+            <p class="food-desc">Fresh local fish cooked in traditional light Bengali gravy with spices.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ — (Daily Rate)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fish Seasonal -->
+        <div class="food-card" data-category="bengali fish">
+          <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=500&q=80" alt="Seasonal Fish Dish" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Fish / Seasonal</span>
+            <h4 class="food-title">Seasonal Fish Preparation</h4>
+            <p class="food-desc">Market-fresh fish preparations prepared based on seasonal availability.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ — (Market Price)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chicken Item -->
+        <div class="food-card" data-category="bengali chicken">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=500&q=80" alt="Bengali Chicken Curry" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chicken / Bengali</span>
+            <h4 class="food-title">Bengali Chicken Curry (Murgir Jhol)</h4>
+            <p class="food-desc">Comforting homestyle chicken curry cooked with potatoes and whole spices.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mutton Item -->
+        <div class="food-card" data-category="bengali mutton">
+          <img src="https://images.unsplash.com/photo-1545247181-516773ca83f3?auto=format&fit=crop&w=500&q=80" alt="Bengali Mutton Curry" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Mutton / Bengali</span>
+            <h4 class="food-title">Bengali Mutton Curry (Kosha/Jhol)</h4>
+            <p class="food-desc">Tender mutton slow-simmered in rich, aromatic Bengali style spices.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Egg Item -->
+        <div class="food-card" data-category="bengali egg">
+          <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=500&q=80" alt="Egg Curry Meal" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Egg / Bengali</span>
+            <h4 class="food-title">Dim er Dalna (Egg Curry)</h4>
+            <p class="food-desc">Boiled eggs fried and simmered in a spiced onion, ginger and tomato gravy.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veg Dal -->
+        <div class="food-card" data-category="bengali veg">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=80" alt="Bengali Dal" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Vegetarian / Staple</span>
+            <h4 class="food-title">Bengali Dal & Bhaja / Torkari</h4>
+            <p class="food-desc">Daily prepared lentils paired with fried items or seasonal vegetable sides.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veg Seasonal -->
+        <div class="food-card" data-category="bengali veg">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80" alt="Mixed Vegetables" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Vegetarian</span>
+            <h4 class="food-title">Seasonal Mixed Vegetable / Aloo Sabzi</h4>
+            <p class="food-desc">Freshly prepared vegetarian preparation using regional vegetables.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chinese Chowmein -->
+        <div class="food-card" data-category="chinese">
+          <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500&q=80" alt="Chowmein" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Veg / Non-Veg Chowmein</h4>
+            <p class="food-desc">Wok-tossed noodles with crunchy vegetables, sauces and optional egg/chicken.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chinese Fried Rice -->
+        <div class="food-card" data-category="chinese">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=500&q=80" alt="Fried Rice" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Fried Rice</h4>
+            <p class="food-desc">Classic aromatic fried rice tossed with greens and savory seasoning.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chilli Chicken -->
+        <div class="food-card" data-category="chinese chicken">
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=500&q=80" alt="Chilli Chicken" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Chilli Chicken</h4>
+            <p class="food-desc">Popular Indo-Chinese crispy chicken tossed in soy, chilli sauce and capsicum.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chilli Paneer -->
+        <div class="food-card" data-category="chinese veg">
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=500&q=80" alt="Chilli Paneer" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Chilli Paneer</h4>
+            <p class="food-desc">Fresh cottage cheese cubes cooked with bell peppers, green chillies and sauces.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manchurian -->
+        <div class="food-card" data-category="chinese">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=500&q=80" alt="Manchurian" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Chicken / Veg Manchurian</h4>
+            <p class="food-desc">Juicy dumplings or chicken pieces simmered in spicy Manchurian gravy.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Momos -->
+        <div class="food-card" data-category="chinese">
+          <img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=500&q=80" alt="Steamed Momos" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Steamed / Fried Momos</h4>
+            <p class="food-desc">Delicious steamed dumplings served with fiery homemade red chilli chutney.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spring Rolls -->
+        <div class="food-card" data-category="chinese">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Spring Rolls" class="food-card-img">
+          <div class="food-card-body">
+            <span class="food-tag">Chinese Snacks</span>
+            <h4 class="food-title">Crispy Spring Rolls</h4>
+            <p class="food-desc">Golden-fried crispy rolls stuffed with julienned vegetables and seasoning.</p>
+            <div class="food-footer">
+              <span class="food-price">₹ —</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Menu Availability Notice & Action -->
+      <div class="menu-notice-box">
+        <p><em>* Sample menu items listed above. Availability and daily preparations may vary according to fresh market produce.</em></p>
+        <button class="btn btn-accent" onclick="askFoodMenu()">Ask About Today's Menu on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FACILITIES SECTION
+       ========================================================================== */ -->
+  <section id="facilities" class="section" style="background-color: #F8F5F0;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Amenities</span>
+        <h2 class="section-title">Hotel Facilities</h2>
+        <p class="section-desc">Practical facilities designed to ensure a clean, comfortable, and seamless stay in Jalpaiguri.</p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="facility-icon">❄️</div>
+          <h3 class="facility-title">AC Rooms</h3>
+          <p class="facility-desc">Cooling comfort for hot and humid seasons in North Bengal.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🛏️</div>
+          <h3 class="facility-title">Non-AC Rooms</h3>
+          <p class="facility-desc">Economical and well-ventilated rooms for budget travelers.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🚿</div>
+          <h3 class="facility-title">Attached Bathrooms</h3>
+          <p class="facility-desc">Private attached bathroom options available with selected rooms.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🚪</div>
+          <h3 class="facility-title">Common Bathrooms</h3>
+          <p class="facility-desc">Clean, maintained common bathroom facilities for economical stays.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🍽️</div>
+          <h3 class="facility-title">Restaurant</h3>
+          <p class="facility-desc">Convenient on-site dining for guests staying with us.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🍲</div>
+          <h3 class="facility-title">Bengali Food</h3>
+          <p class="facility-desc">Wholesome homestyle Bengali rice meals and curries.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🥟</div>
+          <h3 class="facility-title">Chinese Snacks</h3>
+          <p class="facility-desc">Hot snacks including chowmein, momos, rolls and chilli preparations.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">📍</div>
+          <h3 class="facility-title">DBC Road Location</h3>
+          <p class="facility-desc">Situated conveniently along Jalpaiguri's prominent DBC Road.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHY CHOOSE US
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Our Advantages</span>
+        <h2 class="section-title">Why Choose Provat?</h2>
+        <p class="section-desc">We keep things transparent, comfortable, and centered around real customer satisfaction.</p>
+      </div>
+
+      <div class="why-us-grid">
+        <div class="why-card">
+          <h3>Comfortable Stay</h3>
+          <p>Comfortable accommodation options planned to match different budget requirements and travel needs.</p>
+        </div>
+        <div class="why-card">
+          <h3>Authentic Bengali Food</h3>
+          <p>Enjoy familiar, fresh Bengali staples including fish, chicken, mutton, egg, and everyday vegetarian sides.</p>
+        </div>
+        <div class="why-card">
+          <h3>Chinese Snacks</h3>
+          <p>A convenient evening selection of popular Chinese-style fast food and evening bites.</p>
+        </div>
+        <div class="why-card">
+          <h3>Convenient Location</h3>
+          <p>Easily accessible on DBC Road in Jalpaiguri, connecting you effortlessly to local offices and transport.</p>
+        </div>
+        <div class="why-card">
+          <h3>Food + Stay Together</h3>
+          <p>Guests can enjoy both accommodation and freshly cooked hot meals under one roof without stepping out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALLERY SECTION
+       ========================================================================== -->
+  <section id="gallery" class="section" style="background-color: #F5EFEB;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Visual Glimpse</span>
+        <h2 class="section-title">Our Gallery</h2>
+        <p class="section-desc">Take a visual tour of our hotel, rooms, and freshly prepared restaurant dishes.</p>
+      </div>
+
+      <div class="gallery-filter-container">
+        <button class="filter-btn active" data-gallery-filter="all">All</button>
+        <button class="filter-btn" data-gallery-filter="hotel">Hotel</button>
+        <button class="filter-btn" data-gallery-filter="rooms">Rooms</button>
+        <button class="filter-btn" data-gallery-filter="bengali-food">Bengali Food</button>
+        <button class="filter-btn" data-gallery-filter="chinese-food">Chinese Food</button>
+        <button class="filter-btn" data-gallery-filter="restaurant">Restaurant</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Gallery 1: Hotel Exterior / Interior -->
+        <div class="gallery-item" data-category="hotel" data-src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" data-caption="Provat Hotel - Hospitality in Jalpaiguri">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Hotel Premise">
+          <div class="gallery-overlay"><span>View Hotel</span></div>
+        </div>
+
+        <!-- Gallery 2: Room -->
+        <div class="gallery-item" data-category="rooms" data-src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80" data-caption="AC & Non-AC Room Interior">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Guest Room View">
+          <div class="gallery-overlay"><span>View Room</span></div>
+        </div>
+
+        <!-- Gallery 3: Bengali Food -->
+        <div class="gallery-item" data-category="bengali-food" data-src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1200&q=80" data-caption="Bengali Fish Curry & Meals">
+          <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Bengali Food">
+          <div class="gallery-overlay"><span>View Bengali Cuisine</span></div>
+        </div>
+
+        <!-- Gallery 4: Chinese Food -->
+        <div class="gallery-item" data-category="chinese-food" data-src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=80" data-caption="Hot Chowmein & Chinese Delicacies">
+          <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80" alt="Chinese Chowmein">
+          <div class="gallery-overlay"><span>View Chinese Food</span></div>
+        </div>
+
+        <!-- Gallery 5: Restaurant Dining -->
+        <div class="gallery-item" data-category="restaurant" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" data-caption="Provat Restaurant Seating Area">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant Seating">
+          <div class="gallery-overlay"><span>View Restaurant</span></div>
+        </div>
+
+        <!-- Gallery 6: Rooms -->
+        <div class="gallery-item" data-category="rooms" data-src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80" data-caption="Clean Bedding & Amenities">
+          <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80" alt="Comfortable Room Bed">
+          <div class="gallery-overlay"><span>View Bedding</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+      <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ROOM ENQUIRY SECTION (FORM)
+       ========================================================================== -->
+  <section id="enquiry" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title">Send a Room Enquiry</h2>
+        <p class="section-desc">Submit your tentative travel dates and preferences. We will instantly format your enquiry to send directly to our WhatsApp.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="roomEnquiryForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="guestName">Your Full Name *</label>
+              <input type="text" id="guestName" class="form-control" placeholder="e.g. Subrata Mukherjee" required>
+            </div>
+            <div class="form-group">
+              <label for="guestPhone">Contact Phone Number *</label>
+              <input type="tel" id="guestPhone" class="form-control" placeholder="e.g. 98XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label for="checkinDate">Check-in Date *</label>
+              <input type="date" id="checkinDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="checkoutDate">Check-out Date *</label>
+              <input type="date" id="checkoutDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="guestsCount">Number of Guests</label>
+              <input type="number" id="guestsCount" class="form-control" min="1" value="1">
+            </div>
+            <div class="form-group">
+              <label for="roomType">Room Category</label>
+              <select id="roomType" class="form-control">
+                <option value="AC Room">AC Room</option>
+                <option value="Non-AC Room">Non-AC Room</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bathroomPref">Bathroom Preference</label>
+              <select id="bathroomPref" class="form-control">
+                <option value="Attached Bathroom">Attached Bathroom</option>
+                <option value="Common Bathroom">Common Bathroom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="specialReq">Special Note / Requirement</label>
+              <input type="text" id="specialReq" class="form-control" placeholder="e.g. late check-in, food requirements">
+            </div>
+            <div class="form-group full-width" style="margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Enquiry on WhatsApp
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOMER FEEDBACK (DEMO PLACEHOLDERS)
+       ========================================================================== -->
+  <section class="section" style="background-color: #FBF8F5;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Visitor Impressions</span>
+        <h2 class="section-title">Customer Feedback</h2>
+        <p class="section-desc">Transparent guest reviews and impressions. (Easily editable with your genuine feedback below).</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <span class="demo-pill">Demo Review — Replace with actual feedback</span>
+          <p class="testimonial-text">“Clean room on DBC Road at a very reasonable rate. The Bengali fish meal at the restaurant tasted fresh and authentic, just like homestyle food.”</p>
+          <div class="reviewer-name">Debashis Roy</div>
+          <div class="reviewer-tag">Business Traveler to Jalpaiguri</div>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="demo-pill">Demo Review — Replace with actual feedback</span>
+          <p class="testimonial-text">“Convenient spot in the center of Jalpaiguri. Stopped here for an evening meal of chicken chowmein and chilly chicken with my family. Hot and tasty.”</p>
+          <div class="reviewer-name">Ananya Sen</div>
+          <div class="reviewer-tag">Local Resident / Diner</div>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="demo-pill">Demo Review — Replace with actual feedback</span>
+          <p class="testimonial-text">“Polite staff, easy check-in, and good comfort for travelers visiting North Bengal on budget. Having food and lodging together makes things very simple.”</p>
+          <div class="reviewer-name">M. K. Das</div>
+          <div class="reviewer-tag">Family Traveler</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCATION & CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Reach Us</span>
+        <h2 class="section-title">Contact & Find Us</h2>
+        <p class="section-desc">Located right along DBC Road in Jalpaiguri. Stop by, drop a WhatsApp message, or call us directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-card">
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Provat Hotel & Restaurant</h3>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <strong>Address:</strong>
+              <p id="hotelAddressText">DBC Road, Jalpaiguri, West Bengal, India</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <strong>Phone Call:</strong>
+              <p id="hotelPhoneDisplay">+91 XXXXX XXXXX (Contact via Call / WhatsApp)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">💬</div>
+            <div>
+              <strong>WhatsApp:</strong>
+              <p id="hotelWhatsAppDisplay">+91 XXXXX XXXXX</p>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <button class="btn btn-primary" onclick="makePhoneCall()">Call Now</button>
+            <button class="btn btn-accent" onclick="openGeneralWhatsApp()">WhatsApp Us</button>
+            <button class="btn btn-outline" onclick="openGoogleMaps()">Get Directions</button>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+          <!-- REPLACE src with your exact Google Maps embed iframe code -->
+          <iframe 
+            id="gmapIframe"
+            src="https://maps.google.com/maps?q=DBC%20Road,%20Jalpaiguri,%20West%20Bengal&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Provat Hotel & Restaurant Location Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>PROVAT HOTEL & RESTAURANT</h3>
+          <p class="footer-tagline">Comfortable Stay • Bengali Food • Chinese Snacks</p>
+          <p style="font-size: 0.9rem; color: #94A3B8;">Your trusted hospitality and fooding address right on DBC Road, Jalpaiguri, West Bengal.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Connect</h4>
+          <ul>
+            <li><a href="javascript:void(0)" onclick="makePhoneCall()">Call Hotel</a></li>
+            <li><a href="javascript:void(0)" onclick="openGeneralWhatsApp()">WhatsApp</a></li>
+            <li><a href="javascript:void(0)" onclick="openGoogleMaps()">Google Maps</a></li>
+            <li><a href="#enquiry">Room Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Address</h4>
+          <p style="font-size: 0.9rem; color: #CBD5E1; line-height: 1.5;">
+            DBC Road, Jalpaiguri,<br>
+            West Bengal, India
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Provat Hotel & Restaurant. All Rights Reserved. | Crafted for local hospitality.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="javascript:void(0)" class="floating-whatsapp" id="floatingWhatsApp" title="Chat on WhatsApp" onclick="openGeneralWhatsApp()">
+    💬
+  </a>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+
+  <!-- ==========================================================================
+       JAVASCRIPT CODE
+       ========================================================================== -->
+  <script>
+    // ================= HOTEL CONFIGURATION =================
+    // EDIT YOUR HOTEL DETAILS HERE IN ONE PLACE:
+    const HOTEL_NAME = "Provat Hotel & Restaurant";
+    const HOTEL_ADDRESS = "DBC Road, Jalpaiguri, West Bengal, India";
+    const HOTEL_PHONE = "91XXXXXXXXXX";       // e.g., "919876543210" (No '+' or spaces)
+    const WHATSAPP_NUMBER = "91XXXXXXXXXX";   // e.g., "919876543210"
+    const GOOGLE_MAPS_URL = "https://maps.google.com/?q=DBC+Road+Jalpaiguri+West+Bengal";
+    // ========================================================
+
+    // 1. Mobile Navigation Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // 2. Food Menu Filter
+    const menuFilterBtns = document.querySelectorAll('.menu-filter-container .filter-btn');
+    const foodCards = document.querySelectorAll('.food-card');
+
+    menuFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        menuFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        foodCards.forEach(card => {
+          const categories = card.getAttribute('data-category');
+          if (filterValue === 'all' || categories.includes(filterValue)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 3. Gallery Filtering
+    const galleryFilterBtns = document.querySelectorAll('.gallery-filter-container .filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    galleryFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        galleryFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterVal = btn.getAttribute('data-gallery-filter');
+
+        galleryItems.forEach(item => {
+          const itemCat = item.getAttribute('data-category');
+          if (filterVal === 'all' || itemCat === filterVal) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 4. Interactive Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentGalleryIndex = 0;
+    const visibleGalleryItems = () => Array.from(galleryItems).filter(item => item.style.display !== 'none');
+
+    function showLightbox(index) {
+      const items = visibleGalleryItems();
+      if (items.length === 0) return;
+      if (index < 0) index = items.length - 1;
+      if (index >= items.length) index = 0;
+      currentGalleryIndex = index;
+
+      const currentItem = items[currentGalleryIndex];
+      const fullSrc = currentItem.getAttribute('data-src');
+      const caption = currentItem.getAttribute('data-caption');
+
+      lightboxImg.src = fullSrc;
+      lightboxCaption.textContent = caption || '';
+      lightbox.classList.add('active');
+    }
+
+    galleryItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        const items = visibleGalleryItems();
+        const index = items.indexOf(item);
+        showLightbox(index);
+      });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+    });
+
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showLightbox(currentGalleryIndex - 1);
+    });
+
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showLightbox(currentGalleryIndex + 1);
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+
+    // 5. WhatsApp & Communication Actions
+    function openWhatsAppWithMessage(message) {
+      const encodedMsg = encodeURIComponent(message);
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMsg}`;
+      window.open(url, '_blank');
+    }
+
+    function openGeneralWhatsApp() {
+      const message = `Hello ${HOTEL_NAME}, I would like to enquire about rooms/food.`;
+      openWhatsAppWithMessage(message);
+    }
+
+    function enquireRoom(roomType) {
+      const message = `Hello, I would like to enquire about an ${roomType} at${HOTEL_NAME}.`;
+      openWhatsAppWithMessage(message);
+    }
+
+    function askFoodMenu() {
+      const message = `Hello ${HOTEL_NAME}, I would like to know today's food menu and availability.`;
+      openWhatsAppWithMessage(message);
+    }
+
+    function makePhoneCall() {
+      window.location.href = `tel:+${HOTEL_PHONE}`;
+    }
+
+    function openGoogleMaps() {
+      window.open(GOOGLE_MAPS_URL, '_blank');
+    }
+
+    // 6. Room Enquiry Form Submission -> WhatsApp
+    const enquiryForm = document.getElementById('roomEnquiryForm');
+    enquiryForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('guestName').value.trim();
+      const phone = document.getElementById('guestPhone').value.trim();
+      const checkin = document.getElementById('checkinDate').value;
+      const checkout = document.getElementById('checkoutDate').value;
+      const guests = document.getElementById('guestsCount').value;
+      const roomType = document.getElementById('roomType').value;
+      const bathroom = document.getElementById('bathroomPref').value;
+      const specialReq = document.getElementById('specialReq').value.trim();
+
+      const message = `*Room Enquiry - ${HOTEL_NAME}*\n` +
+                      `• Name: ${name}\n` +
+                      `• Phone: ${phone}\n` +
+                      `• Check-in: ${checkin}\n` +
+                      `• Check-out: ${checkout}\n` +
+                      `• Guests: ${guests}\n` +
+                      `• Room Type: ${roomType}\n` +
+                      `• Bathroom Preference: ${bathroom}\n` +
+                      (specialReq ? `• Notes: ${specialReq}\n` : '') +
+                      `\nPlease let me know availability and current tariff.`;
+
+      openWhatsAppWithMessage(message);
+    });
+
+    // 7. Scroll Actions: Back to Top
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Initialize Default Dates for Form
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('checkinDate').min = today;
+    document.getElementById('checkoutDate').min = today;
+  </script>
+</body>
+</html>
