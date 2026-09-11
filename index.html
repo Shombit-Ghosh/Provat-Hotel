@@ -535,6 +535,7 @@
       border-radius: 4px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      z-index: 2;
     }
 
     .room-info {
@@ -1341,8 +1342,7 @@
         <div class="room-card">
           <div class="room-img-wrap">
             <span class="room-tag">Air Conditioned</span>
-            <!-- REPLACE WITH ACTUAL AC ROOM IMAGE -->
-            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=700&q=80" alt="Provat Hotel AC Room">
+            <img src="WhatsApp Image 2026-09-11 at 5.54.47 PM.jpeg" alt="Provat Hotel AC Room">
           </div>
           <div class="room-info">
             <h3 class="room-title">AC Room</h3>
@@ -1369,8 +1369,7 @@
         <div class="room-card">
           <div class="room-img-wrap">
             <span class="room-tag">Economical</span>
-            <!-- REPLACE WITH ACTUAL NON-AC ROOM IMAGE -->
-            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=700&q=80" alt="Provat Hotel Non-AC Room">
+            <img src="WhatsApp Image 2026-09-11 at 5.54.47 PM.jpeg" alt="Provat Hotel Non-AC Room">
           </div>
           <div class="room-info">
             <h3 class="room-title">Non-AC Room</h3>
@@ -1620,7 +1619,7 @@
 
   <!-- ==========================================================================
        FACILITIES SECTION
-       ========================================================================== */ -->
+       ========================================================================== -->
   <section id="facilities" class="section" style="background-color: #F8F5F0;">
     <div class="container">
       <div class="section-title-wrap">
@@ -1738,8 +1737,8 @@
         </div>
 
         <!-- Gallery 2: Room -->
-        <div class="gallery-item" data-category="rooms" data-src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80" data-caption="AC & Non-AC Room Interior">
-          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Guest Room View">
+        <div class="gallery-item" data-category="rooms" data-src="WhatsApp Image 2026-09-11 at 5.54.47 PM.jpeg" data-caption="AC & Non-AC Room Interior">
+          <img src="WhatsApp Image 2026-09-11 at 5.54.47 PM.jpeg" alt="Guest Room View">
           <div class="gallery-overlay"><span>View Room</span></div>
         </div>
 
@@ -1762,8 +1761,8 @@
         </div>
 
         <!-- Gallery 6: Rooms -->
-        <div class="gallery-item" data-category="rooms" data-src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80" data-caption="Clean Bedding & Amenities">
-          <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80" alt="Comfortable Room Bed">
+        <div class="gallery-item" data-category="rooms" data-src="WhatsApp Image 2026-09-11 at 5.54.47 PM.jpeg" data-caption="Clean Bedding & Amenities">
+          <img src="WhatsApp Image 2026-09-11 at 5.54.47 PM.jpeg" alt="Comfortable Room Bed">
           <div class="gallery-overlay"><span>View Bedding</span></div>
         </div>
       </div>
@@ -2142,7 +2141,7 @@
     }
 
     function enquireRoom(roomType) {
-      const message = `Hello, I would like to enquire about an ${roomType} at${HOTEL_NAME}.`;
+      const message = `Hello, I would like to enquire about an ${roomType} at ${HOTEL_NAME}.`;
       openWhatsAppWithMessage(message);
     }
 
