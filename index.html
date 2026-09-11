@@ -481,6 +481,73 @@
     }
 
     /* ==========================================================================
+       OWNERS SECTION
+       ========================================================================== */
+    .owners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .owner-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .owner-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .owner-img-wrap {
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .owner-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .owner-card:hover .owner-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .owner-info {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .owner-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .owner-role {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .owner-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* ==========================================================================
        ROOMS SECTION
        ========================================================================== */
     .rooms-grid {
@@ -1257,6 +1324,7 @@
       <nav class="nav-menu" id="nav-menu">
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
+        <a href="#owners" class="nav-link">Owners</a>
         <a href="#rooms" class="nav-link">Rooms</a>
         <a href="#menu" class="nav-link">Food Menu</a>
         <a href="#facilities" class="nav-link">Facilities</a>
@@ -1321,6 +1389,45 @@
             <li><span>✓</span> Wholesome Vegetarian Dishes</li>
             <li><span>✓</span> Convenient DBC Road Location</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OWNERS SECTION
+       ========================================================================== -->
+  <section id="owners" class="section" style="background-color: #F8F5F0;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Leadership & Hospitality</span>
+        <h2 class="section-title">Meet Our Owners</h2>
+        <p class="section-desc">Dedicated management personally overseeing daily operations to ensure warm service and a welcoming environment for every guest.</p>
+      </div>
+
+      <div class="owners-grid">
+        <!-- Owner 1 -->
+        <div class="owner-card">
+          <div class="owner-img-wrap">
+            <img src="WhatsApp Image 2026-09-11 at 5.54.46 PM.jpeg" alt="Proprietor / Owner of Provat Hotel & Restaurant">
+          </div>
+          <div class="owner-info">
+            <h3 class="owner-title">Management & Supervision</h3>
+            <span class="owner-role">Proprietor / Owner</span>
+            <p class="owner-desc">Dedicated to maintaining high standards of cleanliness, guest comfort, and dependable hospitality right here on DBC Road, Jalpaiguri.</p>
+          </div>
+        </div>
+
+        <!-- Owner 2 -->
+        <div class="owner-card">
+          <div class="owner-img-wrap">
+            <img src="WhatsApp Image 2026-09-11 at 5.54.46 PM (1).jpeg" alt="Co-owner / Management Team">
+          </div>
+          <div class="owner-info">
+            <h3 class="owner-title">Operations & Dining Care</h3>
+            <span class="owner-role">Management Team</span>
+            <p class="owner-desc">Personally ensuring that every visitor experiences authentic Bengali flavors, prompt dining service, and a homely atmosphere during their stay.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1959,6 +2066,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#owners">Owners</a></li>
             <li><a href="#rooms">Rooms</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#gallery">Gallery</a></li>
